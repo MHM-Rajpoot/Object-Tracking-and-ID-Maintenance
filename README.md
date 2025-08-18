@@ -116,8 +116,10 @@ $$
 ## Demo Output  
 Here’s a sample tracking result from the internship:  
 
-![Tracking Demo](https://drive.google.com/uc?export=download&id=1zSCc3_-AREQhybUKnoX4yCY4Bic4hHXS)
+![Tracking Demo](output/demo.gif)  
 
+### GIF Ouput in Google Drive 
+![Tracking Demo Google Drive](https://drive.google.com/uc?export=download&id=1zSCc3_-AREQhybUKnoX4yCY4Bic4hHXS)
 ---
 
 This internship provided a strong foundation in practical computer vision, preparing for advanced research and applications in real-world scenarios.
