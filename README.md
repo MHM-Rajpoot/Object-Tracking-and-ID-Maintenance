@@ -66,4 +66,11 @@ The work was structured into weekly learning outcomes and practical implementati
 
 ---
 
+## 🎥 Demo Output  
+Here’s a sample tracking result from the internship:  
+
+![Tracking Demo](output/demo.gif)  
+
+---
+
 💡 *This internship provided a strong foundation in practical computer vision, preparing for advanced research and applications in real-world scenarios.*  
