@@ -116,7 +116,7 @@ $$
 ## Demo Output  
 Here’s a sample tracking result from the internship:  
 
-![Tracking Demo](output/demo.gif)  
+![Tracking Demo](https://drive.google.com/uc?export=view&id=1zSCc3_-AREQhybUKnoX4yCY4Bic4hHXS)
 
 ---
 
