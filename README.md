@@ -46,7 +46,8 @@ The work was structured into weekly learning outcomes and practical implementati
 - Learned the fundamentals of SORT as a fast and lightweight tracker.  
 - Implemented IoU-based detection-to-tracker assignment.  
 - Explored tracker update rules (hits, no_losses, min_hits, max_age).  
-- Compared SORT against DeepSORT and ByteTrack in speed and accuracy.  
+- Compared SORT against DeepSORT and ByteTrack in speed and accuracy.
+- Used SAM (Segment Anything Model) for Pig segmentation.
 
 #### SORT Tracker Formula
 
