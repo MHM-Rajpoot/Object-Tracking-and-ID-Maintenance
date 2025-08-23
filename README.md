@@ -49,6 +49,14 @@ The work was structured into weekly learning outcomes and practical implementati
 - Compared SORT against DeepSORT and ByteTrack in speed and accuracy.
 - Used SAM (Segment Anything Model) for Pig segmentation.
 
+### Week 8: Spatial & Pig Movement Analysis  
+
+- Extended tracking outputs into **spatial behavior analysis**.  
+- Implemented **distance traveled, heat maps, and movement trajectories** for pigs.  
+- Analyzed **movement dynamics** by computing speed, acceleration, and activity levels.  
+- Aggregated metrics across pigs per video to study behavior trends.  
+- Visualized results with plots and heat maps.
+
 #### SORT Tracker Formula
 
 **1. Intersection over Union (IoU)**
@@ -121,5 +129,17 @@ Here’s a sample tracking result from the internship:
 
 [Demo 0](https://drive.google.com/file/d/1Is8TXBbEAfy34OH4U-M_h5iEg1UkN3wi/view?usp=sharing)
 [Demo 1](https://drive.google.com/file/d/1ljR6NsSlq6iuCMYtU0cYqelMcAjOd65I/view?usp=sharing)
+
+## Spatial Behavior Analysis  
+
+This section extends object tracking by analyzing **pig spatial behavior**, including distance traveled, heat map visualization, and movement patterns.  
+
+| Metric | Visualization | Description |  
+|--------|--------------|-------------|  
+| **Distance Traveled** | ![Pig Distance](./Output/pig_distance.png) | Shows the total path length covered by pigs over time. Useful for monitoring activity levels. |  
+| **Heat Map** | ![Pig Heatmap](./Output/pig_heatmap.png) | Displays regions where pigs spend most of their time. Helps identify resting zones vs active areas. |  
+| **Movement Trajectory** | ![Pig Movement](./Output/pig_movement.png) | Tracks continuous pig trajectories across frames to study movement dynamics. |  
+
+---
 
 This internship provided a strong foundation in practical computer vision, preparing for advanced research and applications in real-world scenarios.
