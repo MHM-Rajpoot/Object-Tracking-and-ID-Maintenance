@@ -127,9 +127,6 @@ Here’s a sample tracking result from the internship:
 
 ![Tracking Demo](/Output/OutputSAM.gif)  
 
-[Demo 0](https://drive.google.com/file/d/1Is8TXBbEAfy34OH4U-M_h5iEg1UkN3wi/view?usp=sharing)
-[Demo 1](https://drive.google.com/file/d/1ljR6NsSlq6iuCMYtU0cYqelMcAjOd65I/view?usp=sharing)
-
 ## Spatial Behavior Analysis  
 
 This section extends object tracking by analyzing **pig spatial behavior**, including distance traveled, heat map visualization, and movement patterns.  
