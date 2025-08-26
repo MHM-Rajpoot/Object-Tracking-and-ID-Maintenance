@@ -134,6 +134,8 @@ Here’s a sample tracking result from the internship:
 
 This section extends object tracking by analyzing **pig spatial behavior**, including distance traveled, heat map visualization, and movement patterns.  
 
+[Code File Analysis](https://github.com/MHM-Rajpoot/Object-Tracking-and-ID-Maintenance/blob/main/Code/10_Pigs_Data_Analysis.ipynb)
+
 | Metric | Visualization | Description |  
 |--------|--------------|-------------|  
 | **Distance Traveled** | ![Pig Distance](./Output/pig_distance.png) | Shows the total path length covered by pigs over time. Useful for monitoring activity levels. |  
