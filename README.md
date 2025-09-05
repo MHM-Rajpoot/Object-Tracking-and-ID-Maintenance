@@ -1,4 +1,4 @@
-# Summer Research 2025 – Computer Vision Projects  
+# Summer Research 2025 – Computer Vision Projects - University of Salford 
 
 ## Overview  
 This internship focused on exploring **Computer Vision**, **Object Detection**, and **Object Tracking** using state-of-the-art tools and models.  
