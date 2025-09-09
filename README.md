@@ -57,6 +57,24 @@ The work was structured into weekly learning outcomes and practical implementati
 - Aggregated metrics across pigs per video to study behavior trends.  
 - Visualized results with plots and heat maps.
 
+### Week 9 & 10: YOLO + SAM Workflow for Large Videos  
+- Developed a chunking workflow to handle large videos under GPU memory constraints (~750 frames per chunk).  
+- Implemented frame filtering:  
+  - Kept only frames with exactly 2 pigs detected.  
+  - Skipped frames with IoU ≥ 0.3 compared to previous frame.  
+- Applied **distortion correction** and defined arena boundaries (5×5m square for pixel-to-meter scaling).  
+- Integrated YOLO + SAM for detection and tracking across chunks:  
+  - YOLO for initial pig detection.  
+  - SAM for consistent pig segmentation and tracking.  
+- Enhanced visualization with:  
+  - Undistorted frames, arena outline, pig masks (dark pink), bounding boxes (blue), IDs (red), and centers (green).  
+  - Distance traveled displayed in real-time (white text).  
+  - Watermarking (YOLO/SAM).  
+- Generated outputs:  
+  - Full processed video and preview clips (first 10 frames).  
+  - CSV logs of distance traveled for analysis.  
+
+
 #### SORT Tracker Formula
 
 **1. Intersection over Union (IoU)**
