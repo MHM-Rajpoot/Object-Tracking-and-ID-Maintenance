@@ -88,9 +88,9 @@ $$
 
 Where:
 
-- \( |B_{pred} \cap B_{det}| \) is the **intersection area**  
-- \( |B_{pred} \cup B_{det}| \) is the **union area**  
-- \( \epsilon \) is a small constant to avoid division by zero  
+- $\( |B_{pred} \cap B_{det}| \)$ is the **intersection area**  
+- $\( |B_{pred} \cup B_{det}| \)$ is the **union area**  
+- $\( \epsilon \)$ is a small constant to avoid division by zero  
 
 **2. Tracker Update Rule**
 
