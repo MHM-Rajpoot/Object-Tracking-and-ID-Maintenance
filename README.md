@@ -126,28 +126,37 @@ $$
 
 `cv2.undistort()` essentially **inverts the distortion mapping**:
 
-- For each output pixel \((u, v)\), it computes the corresponding distorted coordinates \((u_d, v_d)\).  
+- For each output pixel $(u, v)$, it computes the corresponding distorted coordinates $(u_d, v_d)$.  
 - Then it samples from the original (distorted) frame using interpolation.  
 
 This is why straight lines, which appear bent due to distortion, become straight again in the **undistorted image**.
 
+$$
+(u, v) = f(x, y) 
+\;\;\longrightarrow\;\; 
+(u_d, v_d) = g(u, v, k_1, k_2, k_3, p_1, p_2)
+$$
 
-$$\[
-(u, v) = f(x, y) \quad \rightarrow \quad (u_d, v_d) = g(u, v, k_1, k_2, k_3, p_1, p_2)
-\]$$
+---
 
 **6. Pixel to Meter Mapping (5m × 5m Arena)**
 
-We convert pixel coordinates `(u, v)` into real-world coordinates `(X_m, Y_m)`  
-inside a 5 × 5 meter arena using linear scaling.
+We convert pixel coordinates $(u, v)$ into real-world coordinates $(X_m, Y_m)$  
+inside a $5 \times 5$ meter arena using linear scaling.
 
 $$
-(u,v) \;\;\longrightarrow\;\; 
-\left(
-u \cdot \frac{5}{\tfrac{\text{arena\_w} + \text{arena\_h}}{2}}, \;\;
-v \cdot \frac{5}{\tfrac{\text{arena\_w} + \text{arena\_h}}{2}}
-\right)
+(u,v) 
+\;\;\longrightarrow\;\; 
+\Bigg(
+u \cdot \frac{5}{\tfrac{arena\_w + arena\_h}{2}}, \;\;
+v \cdot \frac{5}{\tfrac{arena\_w + arena\_h}{2}}
+\Bigg)
 $$
+
+where:
+
+- $arena\_w$ = width of arena in pixels  
+- $arena\_h$ = height of arena in pixels  
 
 ---
 
