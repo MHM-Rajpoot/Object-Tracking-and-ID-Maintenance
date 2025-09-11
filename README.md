@@ -75,7 +75,7 @@ The work was structured into weekly learning outcomes and practical implementati
   - CSV logs of distance traveled for analysis.  
 
 
-#### SORT Tracker Formula
+#### Formulaz
 
 **1. Intersection over Union (IoU)**
 
@@ -134,6 +134,20 @@ This is why straight lines, which appear bent due to distortion, become straight
 
 $$\[
 (u, v) = f(x, y) \quad \rightarrow \quad (u_d, v_d) = g(u, v, k_1, k_2, k_3, p_1, p_2)
+\]$$
+
+**6. Pixel to Meter Mapping (5m × 5m Arena)**
+
+We convert pixel coordinates `(u, v)` into real-world coordinates `(X_m, Y_m)`  
+inside a 5 × 5 meter arena using linear scaling.
+
+
+$$\[
+(u,v) \;\;\longrightarrow\;\; 
+\left(
+u \cdot \frac{5}{\tfrac{\text{arena\_w} + \text{arena\_h}}{2}}, \;\;
+v \cdot \frac{5}{\tfrac{\text{arena\_w} + \text{arena\_h}}{2}}
+\right)
 \]$$
 
 ---
