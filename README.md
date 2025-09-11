@@ -122,6 +122,20 @@ hits \geq min\_hits
 frame\_count \leq min\_hits
 $$
 
+**5. Undistortion**
+
+`cv2.undistort()` essentially **inverts the distortion mapping**:
+
+- For each output pixel \((u, v)\), it computes the corresponding distorted coordinates \((u_d, v_d)\).  
+- Then it samples from the original (distorted) frame using interpolation.  
+
+This is why straight lines, which appear bent due to distortion, become straight again in the **undistorted image**.
+
+
+$$\[
+(u, v) = f(x, y) \quad \rightarrow \quad (u_d, v_d) = g(u, v, k_1, k_2, k_3, p_1, p_2)
+\]$$
+
 ---
 
 ## Skills & Tools Gained  
