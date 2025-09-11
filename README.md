@@ -141,14 +141,13 @@ $$\[
 We convert pixel coordinates `(u, v)` into real-world coordinates `(X_m, Y_m)`  
 inside a 5 × 5 meter arena using linear scaling.
 
-
-$$\[
+$$
 (u,v) \;\;\longrightarrow\;\; 
 \left(
 u \cdot \frac{5}{\tfrac{\text{arena\_w} + \text{arena\_h}}{2}}, \;\;
 v \cdot \frac{5}{\tfrac{\text{arena\_w} + \text{arena\_h}}{2}}
 \right)
-\]$$
+$$
 
 ---
 
