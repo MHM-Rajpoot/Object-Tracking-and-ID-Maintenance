@@ -57,7 +57,7 @@ The work was structured into weekly learning outcomes and practical implementati
 - Aggregated metrics across pigs per video to study behavior trends.  
 - Visualized results with plots and heat maps.
 
-### Week 9 & 10: YOLO + SAM Workflow for Large Videos  
+### Week 9 to 11: YOLO + SAM Workflow for Large Videos  
 - Developed a chunking workflow to handle large videos under GPU memory constraints (~750 frames per chunk).  
 - Implemented frame filtering:  
   - Kept only frames with exactly 2 pigs detected.  
@@ -67,7 +67,8 @@ The work was structured into weekly learning outcomes and practical implementati
   - YOLO for initial pig detection.  
   - SAM for consistent pig segmentation and tracking.  
 - Enhanced visualization with:  
-  - Undistorted frames, arena outline, pig masks (dark pink), bounding boxes (blue), IDs (red), and centers (green).  
+  - Undistorted frames, arena outline
+  - Homography
   - Distance traveled displayed in real-time (white text).  
   - Watermarking (YOLO/SAM).  
 - Generated outputs:  
@@ -136,6 +137,28 @@ $$
 \;\;\longrightarrow\;\; 
 (u_d, v_d) = g(u, v, k_1, k_2, k_3, p_1, p_2)
 $$
+
+**6. Homography Estimation**
+
+- Estimates a 3x3 matrix describing perspective transformation between two images
+
+$$
+H = \begin{bmatrix}
+h_{11} & h_{12} & h_{13} \\
+h_{21} & h_{22} & h_{23} \\
+h_{31} & h_{32} & h_{33}
+\end{bmatrix}
+$$
+$x' = \frac{h_{11}x + h_{12}y + h_{13}}{h_{31}x + h_{32}y + h_{33}}$
+$y' = \frac{h_{21}x + h_{22}y + h_{23}}{h_{31}x + h_{32}y + h_{33}}$
+
+Uses ORB feature detection and RANSAC
+
+1. `cv2.ORB_create()`
+2. `orb.detectAndCompute(frame, None)`
+3. `cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)`
+4. `sorted(matches, key=lambda x: x.distance)`
+5. `cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)`
 
 ---
 
