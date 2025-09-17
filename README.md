@@ -168,7 +168,7 @@ Uses ORB feature detection and RANSAC
 
 ---
 
-**6. Pixel to Meter Mapping (5m × 5m Arena)**
+**7. Pixel to Meter Mapping (5m × 5m Arena)**
 
 We convert pixel coordinates $(u, v)$ into real-world coordinates $(X_m, Y_m)$  
 inside a $5 \times 5$ meter arena using linear scaling.
