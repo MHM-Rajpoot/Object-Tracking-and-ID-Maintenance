@@ -208,7 +208,7 @@ where:
 ## Demo Output  
 Here’s a sample tracking result from the internship:  
 
-![Tracking Demo](/Output/OutputSAMLiveAnalysisDistance.gif)  
+![Tracking Demo](/Output/OutputSAMLiveAnalysisDistanceHomograph.gif)  
 
 ## Spatial Behavior Analysis  
 
