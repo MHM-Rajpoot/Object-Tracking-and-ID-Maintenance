@@ -140,17 +140,23 @@ $$
 
 **6. Homography Estimation**
 
-- Estimates a 3x3 matrix describing perspective transformation between two images
+Estimates a 3x3 matrix describing perspective transformation between two images
 
 $$
-H = {bmatrix}
+H = \begin{bmatrix}
 h_{11} & h_{12} & h_{13} \\
 h_{21} & h_{22} & h_{23} \\
 h_{31} & h_{32} & h_{33}
-{bmatrix}
+\end{bmatrix}
 $$
-$x' = \frac{h_{11}x + h_{12}y + h_{13}}{h_{31}x + h_{32}y + h_{33}}$
-$y' = \frac{h_{21}x + h_{22}y + h_{23}}{h_{31}x + h_{32}y + h_{33}}$
+
+$$
+x' = \frac{h_{11}x + h_{12}y + h_{13}}{h_{31}x + h_{32}y + h_{33}}
+$$
+
+$$
+y' = \frac{h_{21}x + h_{22}y + h_{23}}{h_{31}x + h_{32}y + h_{33}}
+$$
 
 Uses ORB feature detection and RANSAC
 
