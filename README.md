@@ -218,7 +218,7 @@ This section extends object tracking by analyzing **pig spatial behavior**, incl
 
 | Metric | Visualization | Description |  
 |--------|--------------|-------------|  
-| **Distance Traveled** | ![Pig Distance](./Output/pig_distance.png) | Shows the total path length covered by pigs over time. Useful for monitoring activity levels. |  
+| **Interaction Frequency Over Time** | ![Pig Interaction](./Output/pig_interaction.png) | Shows the total interation of pigs over time. Useful for monitoring activity levels. |  
 | **Heat Map** | ![Pig Heatmap](./Output/pig_heatmap.png) | Displays regions where pigs spend most of their time. Helps identify resting zones vs active areas. |  
 | **Movement Trajectory** | ![Pig Movement](./Output/pig_movement.png) | Tracks continuous pig trajectories across frames to study movement dynamics. |  
 
